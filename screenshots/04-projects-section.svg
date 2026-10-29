@@ -1,0 +1,112 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#020B17"/>
+      <stop offset="1" stop-color="#03151E"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#00E5FF"/>
+      <stop offset="1" stop-color="#2DE2E6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <g opacity="0.2" stroke="#1D3557" stroke-width="1">
+    <path d="M0 0H1600M0 60H1600M0 120H1600M0 180H1600M0 240H1600M0 300H1600M0 360H1600M0 420H1600M0 480H1600M0 540H1600M0 600H1600M0 660H1600M0 720H1600M0 780H1600M0 840H1600"/>
+    <path d="M0 0V900M80 0V900M160 0V900M240 0V900M320 0V900M400 0V900M480 0V900M560 0V900M640 0V900M720 0V900M800 0V900M880 0V900M960 0V900M1040 0V900M1120 0V900M1200 0V900M1280 0V900M1360 0V900M1440 0V900M1520 0V900"/>
+  </g>
+  <rect x="0" y="0" width="1600" height="66" fill="#020D18" fill-opacity="0.9"/>
+  <line x1="0" y1="66" x2="1600" y2="66" stroke="#1A2D3D"/>
+  <text x="92" y="42" fill="#2DE2E6" font-size="28" font-family="Verdana, sans-serif" font-weight="700">devops</text>
+  <text x="218" y="42" fill="#D7E2EE" font-size="28" font-family="Verdana, sans-serif" font-weight="700">.cloud</text>
+  <g fill="#D6E5F2" font-size="18" font-family="Verdana, sans-serif">
+    <text x="610" y="39">About</text>
+    <text x="710" y="39">Skills</text>
+    <text x="810" y="39">Projects</text>
+    <text x="930" y="39">Pipeline</text>
+    <text x="1040" y="39">Contact</text>
+  </g>
+  <rect x="1225" y="16" width="136" height="34" rx="16" fill="#0A2A31" stroke="#1FE2D0" stroke-opacity="0.6"/>
+  <circle cx="1246" cy="33" r="5" fill="#32E6CD"/>
+  <text x="1261" y="39" fill="#C8F9F2" font-size="13" font-family="Verdana, sans-serif">Available for Roles</text>
+  <rect x="1386" y="15" width="140" height="38" rx="18" fill="#081D2E" stroke="#20D1E6" stroke-width="1.2"/>
+  <text x="1424" y="40" fill="#D9F8FF" font-size="18" font-family="Verdana, sans-serif">GitHub</text>
+
+  <text x="430" y="150" fill="#EAF5FF" font-size="72" font-family="Verdana, sans-serif" font-weight="700">DevOps &amp; Infrastructure Projects</text>
+  <text x="470" y="218" fill="#A9B9C9" font-size="26" font-family="Verdana, sans-serif">Hands-on implementation of containerization, infrastructure provisioning, and automated</text>
+  <text x="730" y="255" fill="#A9B9C9" font-size="26" font-family="Verdana, sans-serif">continuous delivery.</text>
+
+  <g transform="translate(450,310)">
+    <rect x="0" y="0" width="170" height="42" rx="18" fill="#0C3A46"/>
+    <text x="50" y="29" fill="#33E9FF" font-size="20" font-family="Verdana, sans-serif" font-weight="700">All Projects</text>
+    <rect x="190" y="0" width="120" height="42" rx="18" fill="#0B1C2D" stroke="#173C5A"/>
+    <text x="240" y="28" fill="#EAF5FF" font-size="18" font-family="Verdana, sans-serif">Docker</text>
+    <rect x="330" y="0" width="130" height="42" rx="18" fill="#0B1C2D" stroke="#173C5A"/>
+    <text x="360" y="28" fill="#EAF5FF" font-size="18" font-family="Verdana, sans-serif">Terraform</text>
+    <rect x="480" y="0" width="160" height="42" rx="18" fill="#0B1C2D" stroke="#173C5A"/>
+    <text x="515" y="28" fill="#EAF5FF" font-size="18" font-family="Verdana, sans-serif">Git &amp; CI/CD</text>
+  </g>
+
+  <g transform="translate(120,340)">
+    <rect x="0" y="0" width="420" height="420" rx="18" fill="#0A1E2E" stroke="#18395D"/>
+    <rect x="0" y="0" width="420" height="80" rx="18" fill="#0D2B44"/>
+    <rect x="22" y="18" width="64" height="42" rx="12" fill="#7395FF" opacity="0.2"/>
+    <text x="36" y="48" fill="#7DB6FF" font-size="32" font-family="Verdana, sans-serif">✦</text>
+    <text x="105" y="49" fill="#FFF" font-size="18" font-family="Verdana, sans-serif">CONTAINERIZATION</text>
+    <text x="34" y="138" fill="#EAF5FF" font-size="44" font-family="Verdana, sans-serif" font-weight="700">Dockerized Node.js</text>
+    <text x="34" y="178" fill="#EAF5FF" font-size="44" font-family="Verdana, sans-serif" font-weight="700">Application</text>
+    <text x="34" y="218" fill="#8EA7BD" font-size="18" font-family="Verdana, sans-serif">Production Ready</text>
+    <text x="34" y="278" fill="#B2C8D8" font-size="22" font-family="Verdana, sans-serif">Engineered a high-performance, secure</text>
+    <text x="34" y="308" fill="#B2C8D8" font-size="22" font-family="Verdana, sans-serif">Node.js application container leveraging</text>
+    <text x="34" y="338" fill="#B2C8D8" font-size="22" font-family="Verdana, sans-serif">multi-stage builds to cut image size by 90%</text>
+    <text x="34" y="368" fill="#B2C8D8" font-size="22" font-family="Verdana, sans-serif">(from ~820MB to ~78MB) using Node:Alpine.</text>
+    <rect x="34" y="388" width="350" height="1" fill="#233C5A"/>
+    <g font-size="18" font-family="Verdana, sans-serif" fill="#EAF5FF">
+      <text x="34" y="420">✓ Multi-stage build reducing attack surface</text>
+      <text x="34" y="447">✓ Non-root security context</text>
+      <text x="34" y="474">✓ Docker healthcheck endpoint</text>
+    </g>
+  </g>
+
+  <g transform="translate(590,340)">
+    <rect x="0" y="0" width="420" height="420" rx="18" fill="#0A1E2E" stroke="#18395D"/>
+    <rect x="0" y="0" width="420" height="80" rx="18" fill="#3A1A4C"/>
+    <rect x="22" y="18" width="64" height="42" rx="12" fill="#C07FFF" opacity="0.2"/>
+    <text x="40" y="48" fill="#D38CFF" font-size="32" font-family="Verdana, sans-serif">▣</text>
+    <text x="110" y="49" fill="#FFF" font-size="18" font-family="Verdana, sans-serif">INFRASTRUCTURE AS CODE</text>
+    <text x="34" y="138" fill="#EAF5FF" font-size="44" font-family="Verdana, sans-serif" font-weight="700">Terraform-Managed</text>
+    <text x="34" y="178" fill="#EAF5FF" font-size="44" font-family="Verdana, sans-serif" font-weight="700">Nginx Infrastructure</text>
+    <text x="34" y="218" fill="#8EA7BD" font-size="18" font-family="Verdana, sans-serif">IaC Automated</text>
+    <text x="34" y="278" fill="#B2C8D8" font-size="22" font-family="Verdana, sans-serif">Architected declarative infrastructure as</text>
+    <text x="34" y="308" fill="#B2C8D8" font-size="22" font-family="Verdana, sans-serif">code using Terraform to provision</text>
+    <text x="34" y="338" fill="#B2C8D8" font-size="22" font-family="Verdana, sans-serif">containerized Nginx reverse proxy with</text>
+    <text x="34" y="368" fill="#B2C8D8" font-size="22" font-family="Verdana, sans-serif">dynamic virtual host templates, custom</text>
+    <text x="34" y="398" fill="#B2C8D8" font-size="22" font-family="Verdana, sans-serif">volume mounts, and deterministic</text>
+    <text x="34" y="428" fill="#B2C8D8" font-size="22" font-family="Verdana, sans-serif">configuration management.</text>
+    <g font-size="18" font-family="Verdana, sans-serif" fill="#EAF5FF">
+      <text x="34" y="470">✓ Modular HCL architecture with variables &amp; outputs</text>
+      <text x="34" y="497">✓ Automated provisioning with zero manual drift</text>
+    </g>
+  </g>
+
+  <g transform="translate(1060,340)">
+    <rect x="0" y="0" width="420" height="420" rx="18" fill="#0A1E2E" stroke="#18395D"/>
+    <rect x="0" y="0" width="420" height="80" rx="18" fill="#0F3B39"/>
+    <rect x="22" y="18" width="64" height="42" rx="12" fill="#8AE0C0" opacity="0.15"/>
+    <text x="42" y="48" fill="#6AD9B5" font-size="32" font-family="Verdana, sans-serif">✦</text>
+    <text x="110" y="49" fill="#FFF" font-size="18" font-family="Verdana, sans-serif">AUTOMATION &amp; CI/CD</text>
+    <text x="34" y="138" fill="#EAF5FF" font-size="44" font-family="Verdana, sans-serif" font-weight="700">Git Workflow &amp; CI/CD</text>
+    <text x="34" y="178" fill="#EAF5FF" font-size="44" font-family="Verdana, sans-serif" font-weight="700">Pipeline Demo</text>
+    <text x="34" y="218" fill="#8EA7BD" font-size="18" font-family="Verdana, sans-serif">Automated Pipeline</text>
+    <text x="34" y="278" fill="#B2C8D8" font-size="22" font-family="Verdana, sans-serif">Constructed a standardized DevOps Git</text>
+    <text x="34" y="308" fill="#B2C8D8" font-size="22" font-family="Verdana, sans-serif">workflow incorporating trunk-based</text>
+    <text x="34" y="338" fill="#B2C8D8" font-size="22" font-family="Verdana, sans-serif">development, semantic commit conventions,</text>
+    <text x="34" y="368" fill="#B2C8D8" font-size="22" font-family="Verdana, sans-serif">automated GitHub Actions pipeline with</text>
+    <text x="34" y="398" fill="#B2C8D8" font-size="22" font-family="Verdana, sans-serif">lint enforcement, secret scanning, and</text>
+    <text x="34" y="428" fill="#B2C8D8" font-size="22" font-family="Verdana, sans-serif">automated release artifact distribution.</text>
+    <g font-size="18" font-family="Verdana, sans-serif" fill="#EAF5FF">
+      <text x="34" y="470">✓ GitHub Actions CI checking syntax, lint, &amp; tests</text>
+      <text x="34" y="497">✓ Branch protection rules requiring approved reviews</text>
+      <text x="34" y="524">✓ Automated semantic version tagging</text>
+    </g>
+  </g>
+</svg>
