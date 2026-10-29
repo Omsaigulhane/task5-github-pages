@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional DevOps & Cloud Engineering Portfolio showcasing expertise in Docker, Terraform, AWS, Linux, Git, and CI/CD automation.">
+  <meta name="keywords" content="DevOps Engineer, Cloud Engineering, Docker, Terraform, AWS, Linux, CI/CD, Git, Portfolio, GitHub Pages">
+  <meta name="author" content="DevOps Engineer Portfolio">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DevOps & Cloud Engineering Portfolio">
+  <meta property="og:description" content="Automating Infrastructure, Scaling Cloud Systems, and Streamlining CI/CD Pipelines.">
+  
+  <title>DevOps & Cloud Engineering Portfolio | Infrastructure as Code & CI/CD</title>
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Favicon SVG data URI -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☁️</text></svg>">
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="grid-overlay"></div>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="header">
+    <nav class="nav-container" aria-label="Main Navigation">
+      <a href="#hero" class="brand-logo" id="brand-logo">
+        <span class="logo-symbol">&gt;_</span>
+        <span class="logo-text">devops<span class="highlight">.cloud</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#pipeline" class="nav-link">Pipeline</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Header Actions -->
+      <div class="nav-actions">
+        <div class="status-badge" title="Open to DevOps & Cloud internships / opportunities">
+          <span class="status-pulse"></span>
+          <span class="status-text">Available for Roles</span>
+        </div>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" id="nav-github-btn">
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-pill">
+            <span class="pill-dot"></span>
+            <span>DevOps & Cloud Engineering</span>
+          </div>
+          <h1 class="hero-title">
+            Architecting <span class="gradient-text">Reliable Cloud</span> Systems &amp; Automated Pipelines
+          </h1>
+          <p class="hero-description">
+            Passionate DevOps &amp; Cloud Engineering aspirant dedicated to Infrastructure as Code (IaC), containerization, zero-downtime deployment pipelines, and scalable cloud architectures.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary" id="hero-projects-btn">
+              <span>View Projects</span>
+              <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-glass" id="hero-contact-btn">
+              <span>Get in Touch</span>
+            </a>
+          </div>
+
+          <!-- Quick Metrics Bar -->
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <span class="metric-value">100%</span>
+              <span class="metric-label">Automated IaC</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-value">99.9%</span>
+              <span class="metric-label">Target Uptime</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-value">&lt; 3min</span>
+              <span class="metric-label">CI/CD Build Time</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Terminal Simulator -->
+        <div class="hero-terminal-wrapper">
+          <div class="terminal-card" id="terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="terminal-title">
+                <span class="terminal-icon">⚡</span> devops@cloud-bastion: ~
+              </div>
+              <div class="terminal-actions">
+                <button class="terminal-tab active" data-term="deploy">deploy.sh</button>
+                <button class="terminal-tab" data-term="terraform">main.tf</button>
+                <button class="terminal-tab" data-term="docker">docker-compose</button>
+              </div>
+            </div>
+            <div class="terminal-body" id="terminal-screen" aria-live="polite">
+              <!-- Dynamically populated or static baseline -->
+              <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">terraform plan -out=tfplan</span></div>
+              <div class="term-line text-muted">Plan: 3 to add, 0 to change, 0 to destroy.</div>
+              <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">docker build -t app:v1.2.0 .</span></div>
+              <div class="term-line text-info">[+] Building 2.4s (14/14) FINISHED</div>
+              <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">git push origin main</span></div>
+              <div class="term-line text-success">&#x2714; GitHub Actions: CI/CD Pipeline Passed in 48s</div>
+              <div class="term-line text-cyan">&#x27A4; Release deployed to production cluster with zero downtime.</div>
+              <div class="term-line active-line"><span class="term-prompt">$</span> <span class="term-cursor"></span></div>
+            </div>
+            <div class="terminal-footer">
+              <span class="term-status-pill">● System Healthy</span>
+              <span class="term-meta">Region: us-east-1 | Cluster: active</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Bridging Code, Cloud, and Reliability</h2>
+          <p class="section-subtitle">
+            Focused on building reproducible environments, secure cloud systems, and continuous delivery loops that allow developers to ship faster with complete confidence.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card main-bio-card">
+            <div class="bio-header">
+              <div class="avatar-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="avatar-icon">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <div>
+                <h3 class="bio-name">DevOps &amp; Infrastructure Enthusiast</h3>
+                <p class="bio-role">Specializing in Cloud Automation &amp; Platform Reliability</p>
+              </div>
+            </div>
+            <p class="bio-text">
+              I am an aspiring DevOps and Cloud Engineer dedicated to transforming manual deployments into automated, declarative infrastructure. My goal is to streamline software delivery through robust CI/CD practices, Infrastructure as Code, container orchestration, and proactive monitoring.
+            </p>
+            <p class="bio-text">
+              Whether optimizing Docker multi-stage builds for minimal attack surfaces, writing modular Terraform configurations, or establishing branch-protected Git workflows, I prioritize reproducibility, security, and developer experience.
+            </p>
+
+            <div class="philosophy-tags">
+              <span class="tag">⚡ Shift-Left Security</span>
+              <span class="tag">📦 Immutable Infrastructure</span>
+              <span class="tag">🔁 Continuous Delivery</span>
+              <span class="tag">📊 Proactive Monitoring</span>
+            </div>
+          </div>
+
+          <!-- Feature Cards -->
+          <div class="about-features">
+            <div class="feature-card">
+              <div class="feature-icon feature-iac">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                  <line x1="12" y1="22.08" x2="12" y2="12"/>
+                </svg>
+              </div>
+              <div class="feature-content">
+                <h4 class="feature-title">Infrastructure as Code</h4>
+                <p class="feature-desc">Provisioning declarative, version-controlled cloud environments using Terraform to prevent configuration drift.</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon feature-container">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                  <line x1="6" y1="6" x2="6.01" y2="6"/>
+                  <line x1="6" y1="18" x2="6.01" y2="18"/>
+                </svg>
+              </div>
+              <div class="feature-content">
+                <h4 class="feature-title">Containerization</h4>
+                <p class="feature-desc">Designing lightweight, secure, and production-ready Docker containers with multi-stage builds and isolated networking.</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon feature-cicd">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="23 4 23 10 17 10"/>
+                  <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+                </svg>
+              </div>
+              <div class="feature-content">
+                <h4 class="feature-title">Automated CI/CD</h4>
+                <p class="feature-desc">Building automated build, test, and release pipelines using GitHub Actions to achieve rapid feedback cycles.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">DevOps Toolchain</span>
+          <h2 class="section-title">Core Technical Skills</h2>
+          <p class="section-subtitle">
+            Tools, technologies, and cloud services leveraged to automate, deploy, and scale modern applications.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill 1: Git & GitHub -->
+          <div class="skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-box skill-git">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M2.6 10.59L8.38 4.8a1.37 1.37 0 0 1 1.94 0l1.45 1.45-2.22 2.22a1.84 1.84 0 0 0-1.74 1.54l-2.07 1.2a1.84 1.84 0 0 0-.25 3.01 1.84 1.84 0 0 0 2.6-.25l1.2-2.07a1.84 1.84 0 0 0 1.54-1.74l2.22-2.22 1.45 1.45a1.37 1.37 0 0 1 0 1.94l-5.78 5.79a1.37 1.37 0 0 1-1.94 0L2.6 12.53a1.37 1.37 0 0 1 0-1.94z"/>
+                </svg>
+              </div>
+              <span class="skill-level-badge">Version Control</span>
+            </div>
+            <h3 class="skill-name">Git &amp; GitHub</h3>
+            <p class="skill-detail">Branching strategies (Gitflow / Trunk-based), merge conflict resolution, rebase workflows, PR reviews, and repository governance.</p>
+            <div class="skill-tags">
+              <span>Branching</span>
+              <span>Rebase</span>
+              <span>Hooks</span>
+              <span>Code Review</span>
+            </div>
+          </div>
+
+          <!-- Skill 2: Docker -->
+          <div class="skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-box skill-docker">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M13.98 10.22h2.24v2.24h-2.24zm-3.36 0h2.24v2.24h-2.24zm-3.36 0h2.24v2.24H7.26zm10.08 0h2.24v2.24h-2.24zm-13.44 0h2.24v2.24H3.9zm6.72-3.36h2.24v2.24h-2.24zm3.36 0h2.24v2.24h-2.24zm-6.72 0h2.24v2.24H7.26zm3.36-3.36h2.24v2.24h-2.24zM24 12.38c-.37-.22-1.35-.37-2.32.22-.38.22-.75.38-1.12.38-.45 0-1.35-.3-1.87-1.35l-.15-.3h-3.45v2.24h1.12c.38 0 .68.3.68.68 0 .37-.3.67-.68.67h-14.7c-.52 0-.9-.3-.9-.67v-3.82c0-.52-.37-.9-.9-.9-.52 0-.9.38-.9.9v3.82c0 2.47 1.72 4.5 4.05 4.87 1.5.22 3.82.37 6.45.37 7.72 0 13.04-3.44 14.77-9.15z"/>
+                </svg>
+              </div>
+              <span class="skill-level-badge">Containers</span>
+            </div>
+            <h3 class="skill-name">Docker</h3>
+            <p class="skill-detail">Multi-stage builds, Alpine optimizations, container security & non-root users, Docker Compose orchestration, and volume persistence.</p>
+            <div class="skill-tags">
+              <span>Multi-Stage</span>
+              <span>Compose</span>
+              <span>Security</span>
+              <span>Alpine</span>
+            </div>
+          </div>
+
+          <!-- Skill 3: Terraform -->
+          <div class="skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-box skill-terraform">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M15.34 8.78l5.22-3.01v6.03l-5.22 3.01zm-6.68 3.86l5.22-3.01v6.03l-5.22 3.02zm0-7.72L13.88 1.9v6.03L8.66 10.95zm-6.68 3.86l5.22-3.02v6.03L1.98 13.94z"/>
+                </svg>
+              </div>
+              <span class="skill-level-badge">IaC</span>
+            </div>
+            <h3 class="skill-name">Terraform</h3>
+            <p class="skill-detail">Declarative Infrastructure as Code (IaC), remote backend state management, locking with S3 & DynamoDB, reusable modules, and plan auditing.</p>
+            <div class="skill-tags">
+              <span>HCL</span>
+              <span>Remote State</span>
+              <span>Modules</span>
+              <span>Providers</span>
+            </div>
+          </div>
+
+          <!-- Skill 4: Linux Systems -->
+          <div class="skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-box skill-linux">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.02 0c-3.1 0-5.63 2.5-5.63 5.6 0 1.25.42 2.4 1.12 3.32C4.85 10.15 3 13.04 3 16.48c0 3.37 2.1 6.13 5.03 6.97.45.67 1.24 1.05 2.1 1.05h3.74c.86 0 1.65-.38 2.1-1.05 2.93-.84 5.03-3.6 5.03-6.97 0-3.44-1.85-6.33-4.51-7.56.7-.92 1.12-2.07 1.12-3.32C17.65 2.5 15.12 0 12.02 0zm-1.8 4.2c.42 0 .76.34.76.76 0 .42-.34.76-.76.76-.42 0-.76-.34-.76-.76 0-.42.34-.76.76-.76zm3.6 0c.42 0 .76.34.76.76 0 .42-.34.76-.76.76-.42 0-.76-.34-.76-.76 0-.42.34-.76.76-.76z"/>
+                </svg>
+              </div>
+              <span class="skill-level-badge">OS & Admin</span>
+            </div>
+            <h3 class="skill-name">Linux Administration</h3>
+            <p class="skill-detail">Bash scripting, POSIX tools, systemd services, process supervision, SSH hardening, iptables/UFW networking, and log analysis.</p>
+            <div class="skill-tags">
+              <span>Bash</span>
+              <span>systemd</span>
+              <span>Permissions</span>
+              <span>SSH</span>
+            </div>
+          </div>
+
+          <!-- Skill 5: AWS Cloud -->
+          <div class="skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-box skill-aws">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M7.78 12.65l-.76 2.46c-.08.26-.33.43-.6.43H4.49c-.43 0-.72-.42-.58-.82l3.41-9.92c.11-.32.41-.53.75-.53h2.39c.34 0 .64.21.75.53l3.41 9.92c.14.4-.15.82-.58.82h-1.93c-.27 0-.52-.17-.6-.43l-.76-2.46H7.78zm1.96-6.35l-1.33 4.31h2.66l-1.33-4.31zM18.8 15.54h-1.87c-.37 0-.67-.3-.67-.67V9.75c0-.98-.79-1.77-1.77-1.77h-1.32c-.37 0-.67-.3-.67-.67s.3-.67.67-.67h1.32c1.72 0 3.11 1.39 3.11 3.11v5.12c0 .37-.3.67-.67.67zM3.4 18.25c4.76 2.8 10.66 2.8 15.42 0 .34-.2.78-.07.96.28.18.34.05.77-.29.97-5.26 3.09-11.76 3.09-17.02 0-.34-.2-.47-.63-.29-.97.18-.35.62-.48.96-.28z"/>
+                </svg>
+              </div>
+              <span class="skill-level-badge">Cloud</span>
+            </div>
+            <h3 class="skill-name">AWS Cloud</h3>
+            <p class="skill-detail">Core cloud architecture: EC2 instances, S3 object storage, VPC networking, Security Groups, IAM least-privilege policies, and CloudWatch alerts.</p>
+            <div class="skill-tags">
+              <span>EC2</span>
+              <span>S3</span>
+              <span>VPC</span>
+              <span>IAM</span>
+            </div>
+          </div>
+
+          <!-- Skill 6: CI/CD Automation -->
+          <div class="skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-box skill-cicd-tech">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                </svg>
+              </div>
+              <span class="skill-level-badge">Pipelines</span>
+            </div>
+            <h3 class="skill-name">CI/CD Pipelines</h3>
+            <p class="skill-detail">GitHub Actions workflow pipelines, matrix builds, automated test execution, Docker container registry pushes, and deployment webhooks.</p>
+            <div class="skill-tags">
+              <span>GitHub Actions</span>
+              <span>Automated Tests</span>
+              <span>Artifacts</span>
+              <span>Secrets</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">DevOps &amp; Infrastructure Projects</h2>
+          <p class="section-subtitle">
+            Hands-on implementation of containerization, infrastructure provisioning, and automated continuous delivery.
+          </p>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="project-filters" role="tablist">
+          <button class="filter-btn active" data-filter="all" role="tab">All Projects</button>
+          <button class="filter-btn" data-filter="docker" role="tab">Docker</button>
+          <button class="filter-btn" data-filter="terraform" role="tab">Terraform</button>
+          <button class="filter-btn" data-filter="git" role="tab">Git &amp; CI/CD</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Dockerized Node.js -->
+          <article class="project-card" data-category="docker">
+            <div class="project-banner project-banner-docker">
+              <div class="banner-badge">Containerization</div>
+              <div class="banner-icon">🐳</div>
+            </div>
+            <div class="project-body">
+              <div class="project-header">
+                <h3 class="project-title">Dockerized Node.js Application</h3>
+                <span class="project-status">Production Ready</span>
+              </div>
+              <p class="project-desc">
+                Engineered a high-performance, secure Node.js application container leveraging multi-stage builds to cut image size by 90% (from ~820MB to ~78MB) using Node:Alpine. Configured non-root execution, dumb-init signal handling, and built-in health check probes.
+              </p>
+              
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <span class="highlight-bullet">✓</span>
+                  <span>Multi-stage build reducing attack surface</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-bullet">✓</span>
+                  <span>Non-root security context (`node:node`)</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-bullet">✓</span>
+                  <span>Docker healthcheck endpoint with automated restarts</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Docker</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">Alpine Linux</span>
+                <span class="tech-pill">Healthchecks</span>
+                <span class="tech-pill">Compose</span>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn btn-outline btn-sm modal-trigger" data-project="docker-node" id="btn-project-1">
+                  <span>Architecture &amp; Code</span>
+                  <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link-github" title="View Source on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" class="icon-sm">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <span>Repository</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Terraform Nginx -->
+          <article class="project-card" data-category="terraform">
+            <div class="project-banner project-banner-terraform">
+              <div class="banner-badge">Infrastructure as Code</div>
+              <div class="banner-icon">🏗️</div>
+            </div>
+            <div class="project-body">
+              <div class="project-header">
+                <h3 class="project-title">Terraform-Managed Nginx Infrastructure</h3>
+                <span class="project-status">IaC Automated</span>
+              </div>
+              <p class="project-desc">
+                Architected declarative Infrastructure as Code using Terraform to provision containerized Nginx reverse proxies with dynamic virtual host templates, custom volume mounts, automated port bindings, and deterministic configuration management.
+              </p>
+              
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <span class="highlight-bullet">✓</span>
+                  <span>Modular HCL architecture with variables &amp; outputs</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-bullet">✓</span>
+                  <span>Automated provisioning with zero manual drift</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-bullet">✓</span>
+                  <span>State file protection and reproducible local stack</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Terraform</span>
+                <span class="tech-pill">Nginx</span>
+                <span class="tech-pill">Docker Provider</span>
+                <span class="tech-pill">HCL</span>
+                <span class="tech-pill">Networking</span>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn btn-outline btn-sm modal-trigger" data-project="terraform-nginx" id="btn-project-2">
+                  <span>Architecture &amp; Code</span>
+                  <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link-github" title="View Source on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" class="icon-sm">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <span>Repository</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Git Workflow & CI/CD -->
+          <article class="project-card" data-category="git">
+            <div class="project-banner project-banner-git">
+              <div class="banner-badge">Automation &amp; CI/CD</div>
+              <div class="banner-icon">⚙️</div>
+            </div>
+            <div class="project-body">
+              <div class="project-header">
+                <h3 class="project-title">Git Workflow &amp; CI/CD Pipeline Demo</h3>
+                <span class="project-status">Automated Pipeline</span>
+              </div>
+              <p class="project-desc">
+                Constructed a standardized DevOps Git workflow incorporating trunk-based development, semantic commit conventions, automated GitHub Actions pipeline with linter enforcement, secret scanning, and automated release artifact distribution.
+              </p>
+              
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <span class="highlight-bullet">✓</span>
+                  <span>GitHub Actions CI checking syntax, lint, &amp; tests on PRs</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-bullet">✓</span>
+                  <span>Branch protection rules requiring approved reviews</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-bullet">✓</span>
+                  <span>Automated semantic version tagging &amp; release notes</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Git</span>
+                <span class="tech-pill">GitHub Actions</span>
+                <span class="tech-pill">YAML</span>
+                <span class="tech-pill">Semantic Release</span>
+                <span class="tech-pill">DevOps</span>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn btn-outline btn-sm modal-trigger" data-project="git-workflow" id="btn-project-3">
+                  <span>Architecture &amp; Code</span>
+                  <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link-github" title="View Source on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" class="icon-sm">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <span>Repository</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Architecture & Continuous Delivery Pipeline Visualizer -->
+    <section class="section pipeline-section" id="pipeline">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">DevOps Lifecycle</span>
+          <h2 class="section-title">End-to-End Delivery Pipeline</h2>
+          <p class="section-subtitle">
+            How code moves seamlessly from developer workstation to verified, monitored cloud infrastructure.
+          </p>
+        </div>
+
+        <div class="pipeline-flow">
+          <div class="flow-step">
+            <div class="step-num">01</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h4 class="step-title">Code &amp; Commit</h4>
+            <p class="step-text">Conventional commits on feature branches with pre-commit hooks.</p>
+          </div>
+
+          <div class="flow-arrow">➔</div>
+
+          <div class="flow-step">
+            <div class="step-num">02</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <h4 class="step-title">CI Validation</h4>
+            <p class="step-text">Automated unit testing, static linting, and security vulnerability scans.</p>
+          </div>
+
+          <div class="flow-arrow">➔</div>
+
+          <div class="flow-step">
+            <div class="step-num">03</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              </svg>
+            </div>
+            <h4 class="step-title">Docker Packaging</h4>
+            <p class="step-text">Multi-stage container build and pushed to secure image registry.</p>
+          </div>
+
+          <div class="flow-arrow">➔</div>
+
+          <div class="flow-step">
+            <div class="step-num">04</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h4 class="step-title">IaC Provision</h4>
+            <p class="step-text">Terraform updates cloud infrastructure with plan approvals.</p>
+          </div>
+
+          <div class="flow-arrow">➔</div>
+
+          <div class="flow-step">
+            <div class="step-num">05</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 20V10M12 20V4M6 20v-6"></path>
+              </svg>
+            </div>
+            <h4 class="step-title">Observe &amp; Scale</h4>
+            <p class="step-text">Continuous health monitoring, metrics collection, and alerting.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Connect Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Connect &amp; Collaborate</h2>
+          <p class="section-subtitle">
+            Interested in discussing DevOps, cloud architectures, automation, or potential internship opportunities? Let's connect.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards -->
+          <div class="contact-cards">
+            <!-- Email -->
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-card-info">
+                <span class="contact-card-label">Email Address</span>
+                <span class="contact-card-value" id="email-address">devops.engineer.intern@example.com</span>
+              </div>
+              <button class="btn-copy" id="btn-copy-email" title="Copy email address" aria-label="Copy email address">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-sm">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- GitHub -->
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-card link-card">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </div>
+              <div class="contact-card-info">
+                <span class="contact-card-label">GitHub Profile</span>
+                <span class="contact-card-value">github.com/devops-intern</span>
+              </div>
+              <span class="card-arrow">↗</span>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-card link-card">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </div>
+              <div class="contact-card-info">
+                <span class="contact-card-label">LinkedIn</span>
+                <span class="contact-card-value">linkedin.com/in/devops-profile</span>
+              </div>
+              <span class="card-arrow">↗</span>
+            </a>
+
+            <!-- Location / Availability -->
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="contact-card-info">
+                <span class="contact-card-label">Location &amp; Work Preference</span>
+                <span class="contact-card-value">Open to Remote &amp; Hybrid Roles</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Message Form -->
+          <div class="contact-form-container">
+            <h3 class="form-title">Send a Quick Message</h3>
+            <p class="form-subtitle">Fill in the form below or reach out directly via email or GitHub.</p>
+            
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name">Your Name</label>
+                <input type="text" id="contact-name" name="name" placeholder="Alex Turner" required>
+                <span class="form-error" id="name-error">Please enter your name.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Your Email</label>
+                <input type="email" id="contact-email" name="email" placeholder="alex@company.com" required>
+                <span class="form-error" id="email-error">Please enter a valid email address.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Topic / Subject</label>
+                <select id="contact-subject" name="subject">
+                  <option value="Internship Opportunity">Internship Opportunity</option>
+                  <option value="DevOps Project Collaboration">DevOps Project Collaboration</option>
+                  <option value="Technical Discussion">Technical Discussion</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" rows="4" placeholder="Hello! I saw your DevOps portfolio and would like to connect regarding..." required></textarea>
+                <span class="form-error" id="message-error">Please enter your message.</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                <span>Send Message</span>
+                <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+
+            <div class="form-status" id="form-status" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Project Detail Modals -->
+  <div class="modal-backdrop" id="modal-backdrop" aria-hidden="true">
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" aria-label="Close dialog">&times;</button>
+      <div class="modal-content" id="modal-content">
+        <!-- Content injected by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast" role="alert" aria-live="assertive"></div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#hero" class="brand-logo">
+          <span class="logo-symbol">&gt;_</span>
+          <span class="logo-text">devops<span class="highlight">.cloud</span></span>
+        </a>
+        <p class="footer-desc">
+          Automated, containerized, and declarative infrastructure engineering portfolio built for GitHub Pages.
+        </p>
+      </div>
+
+      <div class="footer-nav">
+        <h4 class="footer-heading">Navigation</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#pipeline">Pipeline</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-meta">
+        <h4 class="footer-heading">Hosting &amp; Tech</h4>
+        <p class="meta-line">🚀 Hosted via <strong>GitHub Pages</strong></p>
+        <p class="meta-line">⚡ Pure Semantic HTML5, CSS3 &amp; JS</p>
+        <p class="meta-line">🔒 Zero External Trackers or Heavy Bundlers</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p>&copy; <span id="current-year">2026</span> DevOps Portfolio. Created for GitHub Pages Internship Task.</p>
+        <a href="#hero" class="back-to-top" id="back-to-top" aria-label="Back to top">
+          <span>Top</span> ↑
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
